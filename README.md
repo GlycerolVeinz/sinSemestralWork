@@ -15,8 +15,11 @@
 - team email: sinnersfelctu@googlegroups.com
 
 ## Current tasks
-[x] uživatelská jména jednotlivých členů, 
-[x] odkaz na rozcestník projektu (např. GitLab wiki), 
-[x] společný email projektu (=automatické rozesílání na adresy všech členů, například pomocí https://groups.google.com/ ).
+### 1.10.2024
+    [x] collect user names 
+    [x] make a link to the project's hub (např. GitLab wiki), 
+    [x] create a team's email (automatic email resender to the whole team e.g.: https://groups.google.com/ ).
 
+    [ ] Find out next tasks
+        [ ] Create issues for them
 
