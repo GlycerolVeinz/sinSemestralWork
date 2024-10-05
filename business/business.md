@@ -105,9 +105,10 @@ flowchart TD
 ___
 
 ### Business requirements [^7]
+**These should be done after the business goals are set**
 
 
-
+___
 
 [^1]: Explanation - Business goals are the high-level objectives that the project aims to achieve. These could be strategic objectives, financial outcomes, or operational improvements. They guide the entire analysis by providing the rationale behind the project.
 
