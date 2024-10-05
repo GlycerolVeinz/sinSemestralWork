@@ -32,8 +32,18 @@
 - [x] make a link to the project's hub (např. GitLab wiki), 
 - [x] create a team's email (automatic email resender to the whole team e.g.: https://groups.google.com/ ).
 
-- [ ] Find out next tasks
-    - [ ] Create issues for them
+- [x] Find out next tasks
+    - [x] Create issues for them
+
+### 5.10.2024
+- [ ] Prepare for consultation No. 3
+    - [ ] Business Goals
+    - [ ] Justification 
+    - [ ] Business Domain Model
+    - [ ] Business Process Model
+    - [ ] Business Requirements
+    
+- [ ] Status presentation
 
 ## Ideas
 - Reservation of strippers for other clubs (bars)
