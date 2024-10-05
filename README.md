@@ -26,28 +26,6 @@
 ### Presentations
 - [Project's vision](https://docs.google.com/presentation/d/1vIWmiGsw_xAF6CRHK3qURhwJZYHupuV7wGaMn6wWAJs/edit)
 
-## Current tasks
-### 1.10.2024
-- [x] collect user names 
-- [x] make a link to the project's hub (např. GitLab wiki), 
-- [x] create a team's email (automatic email resender to the whole team e.g.: https://groups.google.com/ ).
-
-- [x] Find out next tasks
-    - [x] Create issues for them
-
-### 5.10.2024
-- [ ] Prepare for consultation No. 3
-    - [ ] Business Goals
-    - [ ] Justification
-        - [ ] Costs
-        - [ ] Benefits
-        - [ ] Unit costs
-    - [ ] Models
-        - [ ] Business Domain Model
-        - [ ] Business Process Model
-        - [ ] Business Requirements
-    - [ ] Status presentation
-
 ## Ideas
 - Reservation of strippers for other clubs (bars)
 - Order stripper home (Security?)
