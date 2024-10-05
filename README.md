@@ -26,15 +26,6 @@
 ### Presentations
 - [Project's vision](https://docs.google.com/presentation/d/1vIWmiGsw_xAF6CRHK3qURhwJZYHupuV7wGaMn6wWAJs/edit)
 
-## Current tasks
-### 1.10.2024
-- [x] collect user names 
-- [x] make a link to the project's hub (např. GitLab wiki), 
-- [x] create a team's email (automatic email resender to the whole team e.g.: https://groups.google.com/ ).
-
-- [ ] Find out next tasks
-    - [ ] Create issues for them
-
 ## Ideas
 - Reservation of strippers for other clubs (bars)
 - Order stripper home (Security?)
