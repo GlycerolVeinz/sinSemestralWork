@@ -87,6 +87,23 @@ ___
 
 ### Business process model [^6]
 
+#### Mock example diagram
+```mermaid
+flowchart TD
+    start((Start)) --> a[Login]
+    a --> b[Main menu]
+    b --> c[Scroll strippers]
+    c --> d[Select stripper]
+    d --> e[Reserve]
+    e -->|Stripper declines| c
+    e -->|Stripper accepts| f[Confirm reservation]
+    f --> g[Pay at location after the show]
+```
+- This is purely mock diagram, the actual model should be made in EA
+- for better model check presentation slide "Main business events" and "Main business goals"
+
+___
+
 ### Business requirements [^7]
 
 
