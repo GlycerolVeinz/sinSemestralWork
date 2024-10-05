@@ -38,12 +38,15 @@
 ### 5.10.2024
 - [ ] Prepare for consultation No. 3
     - [ ] Business Goals
-    - [ ] Justification 
-    - [ ] Business Domain Model
-    - [ ] Business Process Model
-    - [ ] Business Requirements
-    
-- [ ] Status presentation
+    - [ ] Justification
+        - [ ] Costs
+        - [ ] Benefits
+        - [ ] Unit costs
+    - [ ] Models
+        - [ ] Business Domain Model
+        - [ ] Business Process Model
+        - [ ] Business Requirements
+    - [ ] Status presentation
 
 ## Ideas
 - Reservation of strippers for other clubs (bars)
