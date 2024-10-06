@@ -170,19 +170,33 @@ ___
 ### Business process model [^6]
 
 #### Mock example diagram
-##### Stripper reservation process
+##### User experience process
 ```mermaid
 flowchart TD
-    start((Start)) --> login[Login]
-    login --> mainMenu[Main menu]
-    mainMenu --> tinder[Scroll strippers]
-    tinder --> select[Select stripper]
-    select --> reserve[Reserve]
-    reserve --> decision{Stripper decides}
-    decision -->|Stripper declines| tinder
-    decision -->|Stripper accepts| confirm[Confirm reservation]
-    confirm --> pay[Pay at location after the show]
-    pay --> END((End))
+    start((Start)) --> login
+    login --> mainMenu
+    mainMenu --> mainMenuAction{choose action}
+    mainMenuAction -->|browse strippers| scrollStrippers
+        scrollStrippers -->|inspect| stripper
+        stripper --> reserve
+        reserve --> decision{Stripper decides}
+        decision -->|Stripper declines| mainMenuAction
+        decision -->|Stripper accepts| confirm
+            confirm --> pay[Pay at location after the show]
+            pay --> afterShow{after show}
+                afterShow -->|exit| END((end))
+                afterShow -->|leave review| review
+                    review -->|leave review for stripper| stripper
+
+    mainMenuAction -->|list strippers| listedStrippers
+        listedStrippers -->|inspect| stripper
+    
+    mainMenuAction -->|exit| END
+    mainMenuAction -->|edit data| profile
+        profile --> profileAction{choose action}
+        profileAction --> |edit| profile
+        profileAction --> |save| mainMenuAction
+        profileAction --> |leave review from history| review
 ```
 ##### Club management process
 ```mermaid
@@ -222,10 +236,9 @@ flowchart TD
     endOfWork --> END((End))
 ```
 
+
 - These are purely mock diagrams, the actual models should be made in EA
 - for better model check presentation slide "Main business events" and "Main business goals"
-
-
 
 ___
 
