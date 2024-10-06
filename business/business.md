@@ -2,6 +2,8 @@
 
 ## Table of contents
 1. [Business goals](#business-goals)
+   1. [Primary Business Goals](#primary-business-goals)
+   2. [Sub-Goals](#sub-goals)
 2. [Justification of the Project](#justification-of-the-economic-feasibility-of-the-project)
 3. [Business models](#business-models)
     1. [Business domain model](#business-domain-model)
@@ -10,79 +12,45 @@
 
 ## Business goals [^1]
 
-### Primary Business Goals for the First Year
+### Primary Business Goals
 
-#### 1. Achieve Profitability
-##### Checkpoints to Meet This Goal:
-- The application is operational, with enough clients to cover costs (see financial analysis).
-- There are no legal conflicts.
-- Effective marketing is in place.
+#### BG01: Functional Operation of the Application
+##### Description:
+This goal is considered fulfilled if we launch an application that is **functional, secure, reliable**, and ready for use by customers. Additionally, regular maintenance and a problem-solving system must be ensured to prevent sudden outages in the future.
 
-#### 2. Launch the Application
-##### Checkpoints to Meet This Goal:
-- The application is functional, secure, and reliable.
-- Regular maintenance is ensured to prevent sudden outages.
+#### BG02: Clientele Growth
+##### Description:
+This goal aims to establish a **long-term growth trend** in the number of clients, including both **strippers and customers**, as well as securing partnerships with clubs and eventually expanding into other cities.
 
-#### 3. Attract Strippers as Clients
-##### Checkpoints to Meet This Goal:
-- The application is functional and user-friendly.
-- The organization appears trustworthy.
-- No legal issues are associated with using the application.
-- Effective marketing and advertising campaigns are in place.
+#### BG03: Maintain a Good Reputation and Attractiveness for New and Existing Customers
+##### Description:
+The main pillar of this business goal is to **maintain and improve the positive media image** of our organization and striptease as a whole. Additionally, for our application, it is crucial to ensure the **functionality and reliability** of the review system and actively address any issues that arise to prevent mistrust due to technical or human failures.
 
-#### 4. Secure Partnerships with Clubs
-##### Checkpoints to Meet This Goal:
-- The application is functional and user-friendly.
-- The organization appears trustworthy.
-- No legal issues are associated with using the application.
-- Effective marketing and advertising campaigns are in place.
+### Sub-Goals
 
-#### 5. Attract Customers from the General Public
-##### Checkpoints to Meet This Goal:
-- The application is functional and user-friendly.
-- The organization appears trustworthy.
-- No legal issues are associated with using the application.
-- Effective marketing and advertising campaigns are in place.
-- The public is familiar with the vision and mission of the organization.
-- Gradually reducing the taboo around striptease as an artistic expression.
-- Targeting customers from the mainstream public.
+#### Sub-Goal 01: Actively Address Issues Raised by Customers → BG03
+- This involves managing **blacklists** and excluding **difficult or inappropriate customers** as well as providing **functional customer support**.
 
-#### 6. Actively Address Issues Raised by Customers, Clubs, and Employees
-##### Checkpoints to Meet This Goal:
-- Maintaining blacklists and excluding difficult or inappropriate customers.
-- Ensuring efficient customer support.
+#### Sub-Goal 02: Resolve Potential Legal Issues → BG03
+- To achieve this goal, it is necessary to **anticipate potential problems** and resolve them, ensuring the **complete legal integrity and trustworthiness** of our organization. Specifically, we need to work with the **legal department** to create a strategy to address potential issues.
 
-#### 7. Resolve Potential Legal Issues
-##### Checkpoints to Meet This Goal:
-- Anticipate potential problems and address them.
-- Ensure complete legal compliance and build the organization's trustworthiness.
-- Work with the legal department to develop a strategy to handle potential issues.
+#### Sub-Goal 03: Create a Positive Public Perception of Striptease → BG02, BG03
+- This goal is considered fulfilled if a **positive (or at least neutral) media image** of striptease is created, presenting it as a **unique form of art** that requires **talent and dedication** at a professional level, deserving proper recognition and appreciation.
 
-#### 8. Create a Positive Public Perception of Striptease
-##### Checkpoints to Meet This Goal:
-- Effective advertising and marketing, especially on social media.
-- Establish a positive (or at least neutral) media image of striptease as a unique art form that requires talent and dedication on a professional level.
-- Ensure the public understands the difference between striptease and prostitution.
-- Encourage discussions on the topic via social media and mainstream media.
+#### Sub-Goal 04: Establish a Functional Marketing Model → BG02, BG03
+- To achieve this goal, we need to practically test different forms of marketing, determine which is best suited for our purposes, and then use it consistently.
 
-### Goals for Future Years
+#### Sub-Goal 05: Expand to Other Cities → BG02
+- This goal requires expanding operations to other cities, including all necessary **adjustments to the business model** for adapting to the specific environment.
 
-#### 1. Maintain a Good Reputation and Attractiveness for New and Existing Customers
-##### Checkpoints to Meet This Goal:
-- Ensure the functionality and reliability of review systems and problem resolution.
-- Continue to maintain and enhance the positive media image of the organization and striptease.
+#### Sub-Goal 06: Application Development → BG01
+- The goal requires the creation of a **high-quality and user-friendly application** for our project.
 
-#### 2. Increase Profits
-##### Checkpoints to Meet This Goal:
-- Expand the clientele in Prague and grow into other cities.
+#### Sub-Goal 07: Ensure a Competent Team for Technical Issue Resolution → BG01
+- To achieve this goal, it is necessary to establish a **team capable of independently addressing technical issues** within the application, and to test its effectiveness during real operation.
 
-#### 3. Expand to Other Cities
-##### Checkpoints to Meet This Goal:
-- More intensive marketing efforts.
-- Ensure the application can handle increased demand.
-- Continue to improve the organization's reputation and media image.
-- Continue to challenge the taboos around striptease and our services.
-
+back to [table of contents](#table-of-contents)
+___
 
 ## Justification of the Economic Feasibility of the Project
 
@@ -91,6 +59,9 @@
 ### Benefits [^3]
 
 ### Unit costs [^4]
+
+back to [table of contents](#table-of-contents)
+___
 
 ## Business models
 
@@ -165,6 +136,7 @@ classDiagram
 - This is purely mock diagram, the actual model should be made in EA
 - for better model check presentation slide "Main business events"
 
+back to [table of contents](#table-of-contents)
 ___
 
 ### Business process model [^6]
@@ -198,6 +170,7 @@ flowchart TD
         profileAction --> |save| mainMenuAction
         profileAction --> |leave review from history| review
 ```
+
 ##### Club management process
 ```mermaid
 flowchart TD
@@ -236,27 +209,43 @@ flowchart TD
     endOfWork --> END((End))
 ```
 
+##### Stripper experience process
+```mermaid
+flowchart TD
+    start((Start)) --> login
+    login --> mainMenu
+    mainMenu --> mainMenuAction{Choose action}
+    mainMenuAction --> |manage reservations| reservationsMenu
+        reservationsMenu --> reservationAction{Choose action}
+        reservationAction --> |Decline reservation| reservationsMenu
+        reservationAction --> |Accept reservation| reservation
+            reservation --> afterStripAction{After Performance}
+            afterStripAction --> |leave review| review
+            afterStripAction --> |report customer| reservationsMenu            
+            review --> |exit| END((end))
+
+        reservationAction --> |Set availability| reservationsMenu
+        reservationAction --> |exit| END((end))
+
+    mainMenuAction --> |manage payments| paymentsMenu
+        paymentsMenu --> paymentAction{Choose action}
+        paymentAction --> |Redirect payment| payment
+        paymentAction --> |Withdraw payment| paymentsMenu 
+```
 
 - These are purely mock diagrams, the actual models should be made in EA
 - for better model check presentation slide "Main business events" and "Main business goals"
 
+back to [table of contents](#table-of-contents)
 ___
 
 ### Business requirements [^7]
 **These should be done after the business goals are set**
 
 #### Business goals list
-1. Achieve Profitability
-2. Launch the Application
-3. Attract Strippers as Clients
-4. Secure Partnerships with Clubs
-5. Attract Customers from the General Public
-6. Actively Address Issues Raised by Customers, Clubs, and Employees
-7. Resolve Potential Legal Issues
-8. Create a Positive Public Perception of Striptease
-9. Maintain a Good Reputation and Attractiveness for New and Existing Customers
-10. Increase Profits
-11. Expand to Other Cities
+1. **BG01: Functional Operation of the Application**
+2. **BG02: Clientele Growth**
+3. **BG03: Maintain a Good Reputation and Attractiveness for New and Existing Customers**
 
 #### Business requirements list
 | ID | Requirment Name |
@@ -280,11 +269,8 @@ ___
 | BRQ-302 | Club's reviews |
 | BRQ-303 | Club's event page |
 
-___
-
 back to [table of contents](#table-of-contents)
-
----
+___
 
 [^1]: Explanation - Business goals are the high-level objectives that the project aims to achieve. These could be strategic objectives, financial outcomes, or operational improvements. They guide the entire analysis by providing the rationale behind the project.
 
@@ -299,3 +285,5 @@ back to [table of contents](#table-of-contents)
 [^6]: Explanation - The Business Process Model captures how business processes flow within the project. UML Activity Diagrams are used to model these processes as sequences of activities or tasks.
 
 [^7]: Explanation - This section defines the business requirements and links them back to the business goals. A UML Requirements Diagram helps visualize how specific requirements are tied to goals.
+
+back to [table of contents](#table-of-contents)
