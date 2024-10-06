@@ -170,19 +170,62 @@ ___
 ### Business process model [^6]
 
 #### Mock example diagram
+##### Stripper reservation process
 ```mermaid
 flowchart TD
-    start((Start)) --> a[Login]
-    a --> b[Main menu]
-    b --> c[Scroll strippers]
-    c --> d[Select stripper]
-    d --> e[Reserve]
-    e -->|Stripper declines| c
-    e -->|Stripper accepts| f[Confirm reservation]
-    f --> g[Pay at location after the show]
+    start((Start)) --> login[Login]
+    login --> mainMenu[Main menu]
+    mainMenu --> tinder[Scroll strippers]
+    tinder --> select[Select stripper]
+    select --> reserve[Reserve]
+    reserve --> decision{Stripper decides}
+    decision -->|Stripper declines| tinder
+    decision -->|Stripper accepts| confirm[Confirm reservation]
+    confirm --> pay[Pay at location after the show]
+    pay --> END((End))
 ```
-- This is purely mock diagram, the actual model should be made in EA
+##### Club management process
+```mermaid
+flowchart TD
+    start((Start)) --> login
+    login --> mainMenu
+    mainMenu --> clubMenu
+    clubMenu --> decision{Choose action}
+    decision -->|Manage events| eventsMenu[Events menu]
+        eventsMenu --> eventAction{Choose action}
+        eventAction -->|Create event| event
+        eventAction -->|Edit event| event
+        eventAction -->|Delete event| eventsMenu
+        eventAction -->|Add stripper| strippersMenu
+
+    decision -->|Manage strippers| strippersMenu
+        strippersMenu --> stripperAction{Choose action}
+        stripperAction -->|Add stripper to list| stripper
+        stripperAction -->|Edit stripper data| stripper
+        stripperAction -->|Remove stripper| strippersMenu
+        stripperAction -->|Reserve stripper for event| event
+    
+    decision -->|Manage reviews| reviewsMenu
+        reviewsMenu--> reviewsDecision{Choose action}
+        reviewsDecision-->|React to review| review
+        reviewsDecision-->|Report review| reviewsMenu
+
+    decision -->|Manage reports| reportsMenu
+        reportsMenu--> reportsAction{Choose action}
+        reportsAction-->|Resolve report| reportsMenu
+
+    eventsMenu --> endOfWork{End of managing}
+    reportsMenu --> endOfWork{End of managing}
+    reviewsMenu --> endOfWork{End of managing}
+    strippersMenu --> endOfWork{End of managing}
+
+    endOfWork --> END((End))
+```
+
+- These are purely mock diagrams, the actual models should be made in EA
 - for better model check presentation slide "Main business events" and "Main business goals"
+
+
 
 ___
 
