@@ -263,11 +263,61 @@ ___
 | BRQ-108 | User's anonymity |
 | BRQ-201 | Stripper's availability/dashboard |
 | BRQ-202 | Stripper's reviews |
-| BRQ-203 | Stripper's tips |
 | BRQ-204 | Redirection of pay |
 | BRQ-301 | Club's management system |
 | BRQ-302 | Club's reviews |
 | BRQ-303 | Club's event page |
+
+```mermaid
+graph LR
+    %% Define Goals
+    BG01[Functional Operation of the Application]
+    BG02[Clientele Growth]
+    BG03[Maintain Good Reputation and Attractiveness for Customers]
+
+    %% Define Business Requirements
+    BRQ001[Payment System & Processing]
+    BRQ002[Marketing Campaigns]
+    BRQ003[Legal Department]
+    BRQ101[User Authentication]
+    BRQ102[User Roles Tiers]
+    BRQ103[User Reviews]
+    BRQ104[User Reports]
+    BRQ105[User Reservations]
+    BRQ106[User Blacklist]
+    BRQ107[Browsing for Users]
+    BRQ108[User's Anonymity]
+    BRQ201[Performer Availability/Dashboard]
+    BRQ202[Performer Reviews]
+    BRQ204[Redirection of Payments]
+    BRQ301[Club's Management System]
+    BRQ302[Club's Reviews]
+    BRQ303[Club's Event Page]
+
+    %% Traceability Arrows (Linking Business Requirements to Business Goals)
+    BG01 --> BRQ001
+    BG01 --> BRQ101
+    BG01 --> BRQ102
+    BG01 --> BRQ103
+    BG01 --> BRQ104
+    BG01 --> BRQ105
+    BG01 --> BRQ106
+    BG01 --> BRQ107
+    BG01 --> BRQ201
+    BG01 --> BRQ204
+    BG01 --> BRQ301
+
+    BG03 --> BRQ103
+    BG03 --> BRQ003
+    BG03 --> BRQ302
+    BG03 --> BRQ202
+    BG03 --> BRQ108
+
+    BG02 --> BRQ002
+    BG02 --> BEQ302
+    BG02 --> BRQ202
+    BG02 --> BRQ108
+```
 
 back to [table of contents](#table-of-contents)
 ___
