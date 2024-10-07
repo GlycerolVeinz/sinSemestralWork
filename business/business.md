@@ -54,11 +54,11 @@ ___
 
 ## Justification of the Economic Feasibility of the Project
 
-### Costs [^2] 
-
-### Benefits [^3]
+### Costs & benefits [^2][^3] 
+[Online spreadsheet with calculations](https://docs.google.com/spreadsheets/d/1pfv0A_9-FDrhvn3mnXLFHf2NRknKj2LlisVipGCFNmk/edit?gid=164423424#gid=164423424)
 
 ### Unit costs [^4]
+Unit cost/cost per customer seems redundant in the context of our application as the price does not depend on the number of users unless the unexpectedly high volume requires more computation power. The only exception is the CAC (Customer Acquisition Cost), which determines how much money we spend for attracting 1 customer through marketing.
 
 back to [table of contents](#table-of-contents)
 ___
@@ -240,8 +240,6 @@ back to [table of contents](#table-of-contents)
 ___
 
 ### Business requirements [^7]
-**These should be done after the business goals are set**
-
 #### Business goals list
 1. **BG01: Functional Operation of the Application**
 2. **BG02: Clientele Growth**
