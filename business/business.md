@@ -20,7 +20,7 @@ This goal is considered fulfilled if we launch an application that is **function
 
 #### BG02: Clientele Growth
 ##### Description:
-This goal aims to establish a **long-term growth trend** in the number of clients, including both **strippers and customers**, as well as securing partnerships with clubs and eventually expanding into other cities.
+This goal aims to establish a **long-term growth trend** in the number of clients, including both **Performers and customers**, as well as securing partnerships with clubs and eventually expanding into other cities.
 
 #### BG03: Maintain a Good Reputation and Attractiveness for New and Existing Customers
 ##### Description:
@@ -87,9 +87,9 @@ classDiagram
         +makeReservation()
         +leaveReview()
         %% Browse function is swiping like on tinder
-        +browseStrippers()
-        %% List function is a list of all strippers
-        +listStrippers()
+        +browsePerformers()
+        %% List function is a list of all Performers
+        +listPerformers()
     }
 
     class ClubAdmin{
@@ -98,7 +98,7 @@ classDiagram
         +reportCustomer()
     }
 
-    class Stripper{
+    class Performer{
         -String nickname
         -BufferedImage photo
         -Club workPlace
@@ -116,7 +116,7 @@ classDiagram
     class Reservation{
         -LocalDateTime date
         -Customer customer
-        -Stripper stripper
+        -Performer Performer
     }
 
     class Payment{
@@ -128,10 +128,10 @@ classDiagram
 
     %% Relationships
     Customer "1" --> "1" Tier : "is in"
-    Stripper "1..*" --> "1" Club : "works at"
+    Performer "1..*" --> "1" Club : "works at"
     ClubAdmin "1..*" --> "1" Club : "manages"
     Reservation "*" --> "1" Customer : "is made by"
-    Reservation "*" --> "1" Stripper : "is for"
+    Reservation "*" --> "1" Performer : "is for"
 ```
 - This is purely mock diagram, the actual model should be made in EA
 - for better model check presentation slide "Main business events"
@@ -148,20 +148,20 @@ flowchart TD
     start((Start)) --> login
     login --> mainMenu
     mainMenu --> mainMenuAction{choose action}
-    mainMenuAction -->|browse strippers| scrollStrippers
-        scrollStrippers -->|inspect| stripper
-        stripper --> reserve
-        reserve --> decision{Stripper decides}
-        decision -->|Stripper declines| mainMenuAction
-        decision -->|Stripper accepts| confirm
+    mainMenuAction -->|browse Performers| scrollPerformers
+        scrollPerformers -->|inspect| Performer
+        Performer --> reserve
+        reserve --> decision{Performer decides}
+        decision -->|Performer declines| mainMenuAction
+        decision -->|Performer accepts| confirm
             confirm --> pay[Pay at location after the show]
             pay --> afterShow{after show}
                 afterShow -->|exit| END((end))
                 afterShow -->|leave review| review
-                    review -->|leave review for stripper| stripper
+                    review -->|leave review for Performer| Performer
 
-    mainMenuAction -->|list strippers| listedStrippers
-        listedStrippers -->|inspect| stripper
+    mainMenuAction -->|list Performers| listedPerformers
+        listedPerformers -->|inspect| Performer
     
     mainMenuAction -->|exit| END
     mainMenuAction -->|edit data| profile
@@ -183,14 +183,14 @@ flowchart TD
         eventAction -->|Create event| event
         eventAction -->|Edit event| event
         eventAction -->|Delete event| eventsMenu
-        eventAction -->|Add stripper| strippersMenu
+        eventAction -->|Add Performer| PerformersMenu
 
-    decision -->|Manage strippers| strippersMenu
-        strippersMenu --> stripperAction{Choose action}
-        stripperAction -->|Add stripper to list| stripper
-        stripperAction -->|Edit stripper data| stripper
-        stripperAction -->|Remove stripper| strippersMenu
-        stripperAction -->|Reserve stripper for event| event
+    decision -->|Manage Performers| PerformersMenu
+        PerformersMenu --> PerformerAction{Choose action}
+        PerformerAction -->|Add Performer to list| Performer
+        PerformerAction -->|Edit Performer data| Performer
+        PerformerAction -->|Remove Performer| PerformersMenu
+        PerformerAction -->|Reserve Performer for event| event
     
     decision -->|Manage reviews| reviewsMenu
         reviewsMenu--> reviewsDecision{Choose action}
@@ -204,12 +204,12 @@ flowchart TD
     eventsMenu --> endOfWork{End of managing}
     reportsMenu --> endOfWork{End of managing}
     reviewsMenu --> endOfWork{End of managing}
-    strippersMenu --> endOfWork{End of managing}
+    PerformersMenu --> endOfWork{End of managing}
 
     endOfWork --> END((End))
 ```
 
-##### Stripper experience process
+##### Performer experience process
 ```mermaid
 flowchart TD
     start((Start)) --> login
@@ -259,8 +259,8 @@ ___
 | BRQ-106 | User blacklist | 
 | BRQ-107 | Browsing for users | 
 | BRQ-108 | User's anonymity |
-| BRQ-201 | Stripper's availability/dashboard |
-| BRQ-202 | Stripper's reviews |
+| BRQ-201 | Performer's availability/dashboard |
+| BRQ-202 | Performer's reviews |
 | BRQ-204 | Redirection of pay |
 | BRQ-301 | Club's management system |
 | BRQ-302 | Club's reviews |
@@ -316,6 +316,8 @@ graph LR
     BG02 --> BRQ202
     BG02 --> BRQ108
 ```
+- This is purely mock diagram, the actual model should be made in EA
+- for better model check presentation slide "Main business events"
 
 back to [table of contents](#table-of-contents)
 ___
