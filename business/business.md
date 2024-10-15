@@ -10,10 +10,9 @@
     2. [Business process model](#business-process-model)
     3. [Business requirements](#business-requirements)
 
-## Business goals [^1]
-
+## Business goals 
+[^1]
 ### Primary Business Goals
-
 #### BG01: Functional Operation of the Application
 ##### Description:
 This goal is considered fulfilled if we launch an application that is **functional, secure, reliable**, and ready for use by customers. Additionally, regular maintenance and a problem-solving system must be ensured to prevent sudden outages in the future.
@@ -27,7 +26,6 @@ This goal aims to establish a **long-term growth trend** in the number of client
 The main pillar of this business goal is to **maintain and improve the positive media image** of our organization and striptease as a whole. Additionally, for our application, it is crucial to ensure the **functionality and reliability** of the review system and actively address any issues that arise to prevent mistrust due to technical or human failures.
 
 ### Sub-Goals
-
 #### Sub-Goal 01: Actively Address Issues Raised by Customers → BG03
 - This involves managing **blacklists** and excluding **difficult or inappropriate customers** as well as providing **functional customer support**.
 
@@ -53,19 +51,20 @@ back to [table of contents](#table-of-contents)
 ___
 
 ## Justification of the Economic Feasibility of the Project
-
-### Costs & benefits [^2][^3] 
+### Costs & benefits 
+[^2][^3] 
 [Online spreadsheet with calculations](https://docs.google.com/spreadsheets/d/1pfv0A_9-FDrhvn3mnXLFHf2NRknKj2LlisVipGCFNmk/edit?gid=164423424#gid=164423424)
 
-### Unit costs [^4]
+### Unit costs 
+[^4]
 Unit cost/cost per customer seems redundant in the context of our application as the price does not depend on the number of users unless the unexpectedly high volume requires more computation power. The only exception is the CAC (Customer Acquisition Cost), which determines how much money we spend for attracting 1 customer through marketing.
 
 back to [table of contents](#table-of-contents)
 ___
 
 ## Business models
-
-### Business domain model [^5]
+### Business domain model 
+[^5]
 
 #### Mock diagram
 ```mermaid
@@ -139,7 +138,8 @@ classDiagram
 back to [table of contents](#table-of-contents)
 ___
 
-### Business process model [^6]
+### Business process model 
+[^6]
 
 #### Mock example diagram
 ##### User experience process
@@ -239,7 +239,8 @@ flowchart TD
 back to [table of contents](#table-of-contents)
 ___
 
-### Business requirements [^7]
+### Business requirements 
+[^7]
 #### Business goals list
 1. **BG01: Functional Operation of the Application**
 2. **BG02: Clientele Growth**
@@ -265,6 +266,8 @@ ___
 | BRQ-301 | Club's management system |
 | BRQ-302 | Club's reviews |
 | BRQ-303 | Club's event page |
+
+#### Mock diagram
 
 ```mermaid
 graph LR
