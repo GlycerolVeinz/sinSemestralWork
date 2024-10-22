@@ -83,22 +83,42 @@ ___
         - Ensure the safety of users
 - BRQ-1** - Client requirements
     - BRQ-101 Reviews
+        - Leave feedback
+        - Know other people opinions
     - BRQ-102 Reservation of performers
+        - Be certain that the performer will be available 
     - BRQ-103 Browsing/Scrolling performers
+        - Find the performer that suits my needs
     - BRQ-104 Anonymity
+        - Keep my life separate from the application 
 - BRQ-2** - Performer requirements
     - BRQ-201 Performer's availability/dashboard
+        - Manage my schedule
     - BRQ-202 Performer's reviews
+        - Know what people think about me
     - BRQ-204 Redirection of pay
+        - Possibility to ask for cash payment at my club 
     - BRQ-205 Blacklist
+        - Block clients that are not reliable 
     - BRQ-206 Authentication
+        - Be certain that the client is who they say they are
+        - Increase my safety 
     - BRQ-207 Roles(tiers)
+        - Differentiate between clients (prioritize some over others)
     - BRQ-208 Reports
-    - BRQ-209 Reviews
+        - Report clients that are not reliable
 - BRQ-3** - Club requirements
     - BRQ-301 Management system
+        - Manage performers that work at my club
+        - Manage the club's reputation
     - BRQ-302 Reviews
+        - Know what people think about my club
+        - Attract new clients
+        - Maintain a good reputation
+        - React to negative feedback
     - BRQ-303 Event page
+        - Attract new clients
+        - Spark interest in regulars
 
 ##### *How to read the list:*
 As a [BRQ-Section] I need [BRQ-Requirement Name] because [Reasoning]
