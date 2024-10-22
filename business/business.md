@@ -65,9 +65,11 @@ ___
 
 ### Business requirements
 #### Business goals list
-1. **BG01: Functional Operation of the Application**
-2. **BG02: Clientele Growth**
-3. **BG03: Maintain a Good Reputation and Attractiveness for New and Existing Customers**
+- BG-01: Increase Club Attendance
+- BG-02: Remove Stigma and Raise Awareness of Striptease
+- BG-03: Expand Clientele and Flexible Working Hours
+- BG-04: Client Verification
+- BG-05: Booking a Stripper
 
 #### Business requirements list
 - BRQ-0** - Development team requirements
