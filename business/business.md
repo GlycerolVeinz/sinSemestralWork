@@ -3,7 +3,6 @@
 ## Table of contents
 1. [Business goals](#business-goals)
     1. [Primary Business Goals](#primary-business-goals)
-    2. [Sub-Goals](#sub-goals)
 2. [Justification of the Project](#justification-of-the-economic-feasibility-of-the-project)
 3. [Business models](#business-models)
     1. [Business domain model](#business-domain-model)
