@@ -1,0 +1,64 @@
+User model:
+
+Users are divided into 2 groups: new_users and recurring_users (the ones who already used our app). active_users = [recurring_users + new_users].
+
+For each month number of new_users equals to:
+
+	attracted_users_per_month_year_n * activation_rate + active_users_prev_month * referral_rate
+
+attracted_users_per_month_year_n - this number is calculated as [money_spent_on_marketing/customer_acquisition_rate]
+activation_rate - percentage of installation leading to the usage of the application (at least one transaction)
+referral_rate - number of people attracted by active_users from previous month
+
+The number of recurring users equals to:
+
+	recurring_users_prev_month * dissipation_rate + new_users_prev_month*monthly_retention_rate
+
+dissipation_rate - percentage of recurring users from previous month, who continue using our application (e.g. dissipation rate 0.9 means that 10% of out recurring users will stop using the app next month)
+monthly_retention_rate - percentage of new users from previous month, who continue using our application this month
+
+Revenue:
+
+Monthly revenue from comission is calculated as:
+	
+	active_users * transactions_per_user_per_month * avg_transaction_cost * comission_percentage 
+
+Monthly revenue from subscription:
+	
+	recurring_users * recurring_users_subscription_rate * avg_subscription_cost_per_month
+
+(We only recurring users will be buying subscriptions, not new users) 
+
+Monthly revenue from adds:
+
+	active_users * transactions_per_user_per_month * sessions_per_transaction * adds_per_session * revenue_per_impression 
+
+
+
+Cost:
+
+We estimated the required development duration of 6 months for a team of:
+
+Frontend Developer, Backend Developer, Tech lead (full-stack), Project Manager - 6 months employment
+UI/UX Designer - 2 months employment at the beginning of the project
+QA Tester - 2 months at later stages of development
+
+In our salary estimation we used approximate salaries from jobs.cz, nofluffjobs.com. We also took into account the employer's payroll tax (34%) 
+
+After the development phase our plan is to leave our full stack tech lead on a part-time position for bug fixes, maintenance and maybe some small features 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
