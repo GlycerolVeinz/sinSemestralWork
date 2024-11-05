@@ -66,16 +66,16 @@
 
 # Sinners
 ## Opponent reaction
-[^1] Thank you!
-[^2] First of all, the documentation is kept separate because it is an early version, nothing is truly set in stone untill we fix as much as possible based an all reviews that we can get. Secondly, we tried to use the most comfortable tools for each part of business Analysis.
-[^3] Noted. Will try to fix.
-[^4] We understand your possible confusion, what we wanted to represent is all the possible actions one could take while using the app.
-[^5] As practice shows, if you create a small controversy around something it attracts people and makes them talk about it. Which is a good thing for removing a taboo from a society. Take [*©PURE*](https://pure.app/)
-[^6] They might appear too general at first, but there is a small nuance in our case. Firstly BG01 is the goal that tries to sotisfy business owners, but our app isn't even made for them. That's why we thought it would be a good goal for us, we need to satisfy owners, because we want to collaborate with them, even if our app doesn't explicitly help them. BG03 is little bit different story, we want to help strippers with their work, that is partly why we want to make this app, this goal aims to make their scheduling and work hours easier, in stead of their typical day work when they need too be present at the club whole night long because they don't know when someone will order them.
-[^7] Well we know thatt events attract people, but how are they supposed to know about them if there is no page to display them? That's why we created this BRQ-303. Our app doesn't make events, clubs do, we only provide a place to present them.
-[^8] We would have to disagree about BRQ-303 and BRQ-302, but BRQ-301 noted.
-[^9] Actually it is linked on purpose, we want to attract people with our good payment system that is reliable.
-[^10] It's purely preference, we would appreciate to leave out such comments in further opponent reviews.
-[^11] That is why it is in spreadsheat, our goal was to create credible scenario, but if someone desires to know out possible scenarios he is free to adjust constants and see the outcome. (The spreadsheet is dynamic)
-[^12] This comes purely from EA, we have our classes in separate package. We will try to look in to it (how to hide it).
-[^13] You understood it the way we wanted you to, we don't see a possibility how to name it this simply and with same meaning other way.
+- [^1] Thank you!
+- [^2] First of all, the documentation is kept separate because it is an early version, nothing is truly set in stone untill we fix as much as possible based an all reviews that we can get. Secondly, we tried to use the most comfortable tools for each part of business Analysis.
+- [^3] Noted. Will try to fix.
+- [^4] We understand your possible confusion, what we wanted to represent is all the possible actions one could take while using the app.
+- [^5] As practice shows, if you create a small controversy around something it attracts people and makes them talk about it. Which is a good thing for removing a taboo from a society. Take [*©PURE*](https://pure.app/)
+- [^6] They might appear too general at first, but there is a small nuance in our case. Firstly BG01 is the goal that tries to sotisfy business owners, but our app isn't even made for them. That's why we thought it would be a good goal for us, we need to satisfy owners, because we want to collaborate with them, even if our app doesn't explicitly help them. BG03 is little bit different story, we want to help strippers with their work, that is partly why we want to make this app, this goal aims to make their scheduling and work hours easier, in stead of their typical day work when they need too be present at the club whole night long because they don't know when someone will order them.
+- [^7] Well we know thatt events attract people, but how are they supposed to know about them if there is no page to display them? That's why we created this BRQ-303. Our app doesn't make events, clubs do, we only provide a place to present them.
+- [^8] We would have to disagree about BRQ-303 and BRQ-302, but BRQ-301 noted.
+- [^9] Actually it is linked on purpose, we want to attract people with our good payment system that is reliable.
+- [^10] It's purely preference, we would appreciate to leave out such comments in further opponent reviews.
+- [^11] That is why it is in spreadsheat, our goal was to create credible scenario, but if someone desires to know out possible scenarios he is free to adjust constants and see the outcome. (The spreadsheet is dynamic)
+- [^12] This comes purely from EA, we have our classes in separate package. We will try to look in to it (how to hide it).
+- [^13] You understood it the way we wanted you to, we don't see a possibility how to name it this simply and with same meaning other way.
