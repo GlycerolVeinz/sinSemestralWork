@@ -63,6 +63,21 @@ ___
 #### Performer experience process
 - [Performer experience process diagram](https://github.com/GlycerolVeinz/sinSemestralWork/blob/consultation3/business/business/models/v0.0.3/BMPperformer.pdf)
 
+#### Need to split big diagrams into smaller ones
+- User
+    - login
+    - adding funds to account
+- Customer
+    - Customer and performer interaction
+        - Payment
+- Customer or Performer
+    - leaving a review
+- Manager
+    - Review reaction
+    - Add/Delete/Update a performer
+- Performer
+    - Withdraw payment
+    - Update schedule 
 
 back to [table of contents](#table-of-contents)
 ___
