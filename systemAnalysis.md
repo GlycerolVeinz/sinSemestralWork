@@ -185,8 +185,8 @@ The system must provide club administrators with access to a centralized managem
 
 ### 17. Client - View Performers
 - **Description**: The client views the list of available performers.
-- **Prerequisites**: The client is logged in.
-- **Consequences**: The list of performers is displayed.
+- **Prerequisites**: The client is logged in. [^3]
+- **Consequences**: The list of performers is displayed. [^3]
 
 ### 18. Client - View Performer Profile
 - **Description**: The client views the details of the selected performer's profile.
@@ -206,3 +206,13 @@ The system must provide club administrators with access to a centralized managem
 - Pick better names for use cases
 - [^1] Not in our case, events should be only displayed to lure in clients. Also strippers are reserved for events (can't be reserved by a client while they are on an event)
 - [^2] Need to talk this out with a team
+- Don't you dare to model login !!!
+- In processes description use mostly User / System (general naming) **if possible**
+- [^3] Don't write *"obvious"* conditions
+- Separate use cases by number (like in BRQs) maybe ddifferentiate by main actor ?
+- Usual mistakes
+  - Model shows in-system navigation
+  - Model uses system in stead of Time actor
+  - Wrong way onf *"Include"* / *"Exclude"*
+  - Model encapsulates time hierarchy
+- Don't make it actor-centric
