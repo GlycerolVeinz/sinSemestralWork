@@ -158,37 +158,29 @@ The system must provide club administrators with access to a centralized managem
 - **Prerequisites**: The event is planned and has reservations.
 - **Consequences**: The event is canceled and clients are informed of the cancellation.
 
-### 12. Club Admin - Confirm Event Booking [^1]
-- **Description**: The club confirms a client's reservation for an event.
-- **Prerequisites**: The client has a pending reservation.
-- **Consequences**: The reservation is confirmed and the client is informed.
+### 12. Client - Add funds to my account
 
-### 13. Club Admin - Reject Event Booking ??? [^1]
-- **Description**: The club rejects a client's reservation for an event.
-- **Prerequisites**: The client has a pending reservation.
-- **Consequences**: The reservation is rejected and the client is informed.
-
-### 14. Client - Pay for Premium Membership
+### 13. Client - Pay for Premium Membership
 - **Description**: The client pays for premium features (subscription).
 - **Prerequisites**: The user has access to the account and selects a premium plan.
 - **Consequences**: The premium membership is activated and the user has access to premium features.
 
-### 15. Client - Provide Personal Information [^2]
+### 14. Client - Provide Personal Information [^2]
 - **Description**: The user adds personal information to their profile (e.g., name, contact).
 - **Prerequisites**: The user has an active profile.
 - **Consequences**: The information is saved to the user's profile.
 
-### 16. Client - Make a Reservation
+### 15. Client - Make a Reservation
 - **Description**: The client reserves a performer for a specific time slot.
 - **Prerequisites**: The client has an active account and the performer has available times.
 - **Consequences**: The reservation is confirmed and saved.
 
-### 17. Client - View Performers
+### 16. Client - View Performers
 - **Description**: The client views the list of available performers.
 - **Prerequisites**: The client is logged in. [^3]
 - **Consequences**: The list of performers is displayed. [^3]
 
-### 18. Client - View Performer Profile
+### 17. Client - View Performer Profile
 - **Description**: The client views the details of the selected performer's profile.
 - **Prerequisites**: The performer has an active profile.
 - **Consequences**: The performer's profile is displayed to the client.
