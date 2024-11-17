@@ -103,87 +103,134 @@ The system must provide club administrators with access to a centralized managem
 - Developer
 - Outsourced payment gate ? 
 
-### 1. All Users - Log In
-- **Description**: The user logs in to their account using login credentials.
-- **Prerequisites**: The user has an active account and valid login credentials.
-- **Consequences**: The user is authenticated and has access to their account.
+### Any User
+#### 0. Register a New User
+- **Description:** Users register with the system and create an account.
+- **Prerequisites:** The user provides all required information for registration.
 
-### 2. Club Admin - Report a Review
-- **Description**: The admin can flag a problematic review for investigation if it is deemed inappropriate.
-- **Prerequisites**: There is a review on the profile that requires intervention.
-- **Consequences**: The review is flagged and forwarded for further investigation or action.
+#### 1. Login
+- **Description:** Users log in to their account using credentials.
 
-### 3. Club Admin - Respond to a Review
-- **Description**: The admin can respond to a review to provide an answer or clarify the situation.
-- **Prerequisites**: The review is available for response.
-- **Consequences**: The admin's response is saved and displayed alongside the review.
+### Club Admin
+#### 2. Report a Review
+- **Description:** Admin can flag a problematic review for investigation if deemed inappropriate.
+- **Outcome:** The review is flagged for further investigation or action.
 
-### 4. Club Admin - Edit an Event
-- **Description**: The admin edits the details of an already created event (time, date, description).
-- **Prerequisites**: The event already exists in the system.
-- **Consequences**: The updated details are saved and the relevant participants are informed.
+#### 3. Respond to a Review
+- **Description:** Admin can reply to a review to provide a response or clarify a situation.
 
-### 5. Club Admin - Book a Performer for an Event
-- **Description**: A client or the club books a specific performer for an event.
-- **Prerequisites**: The performer is available for booking.
-- **Consequences**: The performer's booking is confirmed and added to the calendar.
+#### 4. Edit Event Details
+- **Description:** Admin modifies the details of an already created event (time, date, description).
 
-### 6. Club Admin - Change Performer's Availability
-- **Description**: The admin adjusts the performer's availability for specific dates or events.
-- **Prerequisites**: The performer has a set profile and availability calendar.
-- **Consequences**: The performer's availability is updated and visible to clients.
+#### 5. Book a Performer for an Event
+- **Description:** The club reserves a specific performer for an event.
+- **Prerequisites:** The performer is available for booking.
 
-### 7. Club Admin - Edit Club/Staff Profile
-- **Description**: The performer updates their own or a staff member's profile, adds photos, bio, and updates their calendar.
-- **Prerequisites**: The profile already exists.
-- **Consequences**: The profile is updated and the new information is available to clients.
+#### 6. Update Performer's Availability
+- **Description:** Admin adjusts a performer’s availability for specific dates or events.
 
-### 8. Club Admin - Delete Performer Profile
-- **Description**: The admin permanently deletes a performer's profile.
-- **Prerequisites**: The performer’s profile is active in the system.
-- **Consequences**: The performer’s profile is deleted and is no longer visible to users.
+#### 7. Manage Club or Employee Profiles
+- **Description:** Admin updates club or employee profiles, adding photos, bio, and availability.
 
-### 9. Club Admin - Create Performer Profile
-- **Description**: The admin creates a new profile for a performer in the system.
-- **Prerequisites**: The admin has the necessary information about the performer.
-- **Consequences**: The profile is created and visible to clients.
+#### 8. Remove Performer Profile
+- **Description:** Admin permanently removes a performer’s profile.
 
-### 10. Club Admin - Create an Event Invitation
-- **Description**: The club creates an invitation for an upcoming event and sends it out.
-- **Prerequisites**: The club has the permission to create and manage events.
-- **Consequences**: The invitation is sent and displayed to participants.
+#### 9. Create Performer Profile
+- **Description:** Admin creates a new profile for a performer in the system.
 
-### 11. Club Admin - Cancel an Event
-- **Description**: The club cancels a planned event.
-- **Prerequisites**: The event is planned and has reservations.
-- **Consequences**: The event is canceled and clients are informed of the cancellation.
+#### 10. Create Event Invitation
+- **Description:** The club creates and sends an invitation for an upcoming event.
 
-### 12. Client - Add funds to my account
+#### 11. Cancel Event
+- **Description:** The club cancels a scheduled event.
+- **Outcome:** Clients are notified of the cancellation.
 
-### 13. Client - Pay for Premium Membership
-- **Description**: The client pays for premium features (subscription).
-- **Prerequisites**: The user has access to the account and selects a premium plan.
-- **Consequences**: The premium membership is activated and the user has access to premium features.
+### Clients
+#### 13. Add Funds to My Account
+- **Description:** Clients can buy funds through a third-party site to add to their profile. These funds are used to pay for performances.
 
-### 14. Client - Provide Personal Information [^2]
-- **Description**: The user adds personal information to their profile (e.g., name, contact).
-- **Prerequisites**: The user has an active profile.
-- **Consequences**: The information is saved to the user's profile.
+#### 14. Pay for Premium Membership
+- **Description:** The client pays for premium features.
 
-### 15. Client - Make a Reservation
-- **Description**: The client reserves a performer for a specific time slot.
-- **Prerequisites**: The client has an active account and the performer has available times.
-- **Consequences**: The reservation is confirmed and saved.
+#### 15. Add Personal Information
+- **Description:** Users add personal information to their profile (e.g., name, contact).
 
-### 16. Client - View Performers
-- **Description**: The client views the list of available performers.
-- **Prerequisites**: The client is logged in. [^3]
-- **Consequences**: The list of performers is displayed. [^3]
+#### 16. Create a Reservation
+- **Description:** Clients book a performer for a specific time slot.
+- **Prerequisites:** The performer has available slots.
 
-### 17. Client - View Performer Profile
-- **Description**: The client views the details of the selected performer's profile.
-- **Prerequisites**: The performer has an active profile.
-- **Consequences**: The performer's profile is displayed to the client.
+#### 17. View Performers
+- **Description:** Clients view a list of available performers.
+
+#### 18. View Performer Profiles
+- **Description:** Clients view details of a selected performer’s profile.
+
+#### 19. View Performer Reviews
+- **Description:** Clients view reviews and ratings of a selected performer.
+
+#### 20. View Performer Availability
+- **Description:** Clients view the availability calendar of a performer.
+
+### Performers
+#### 21. Confirm Booking
+- **Description:** Performers confirm an event booking.
+
+#### 22. Reject Booking
+- **Description:** Performers reject a booking if unable to accommodate or for other reasons.
+
+#### 23. Cancel Confirmed Booking
+- **Description:** Performers cancel a previously confirmed booking.
+- **Outcome:** The client is informed of the cancellation.
+
+#### 24. Report a Client
+- **Description:** Performers report inappropriate client behavior.
+- **Prerequisites:** The client participated in an event or performance, and there was problematic behavior.
+
+#### 25. Rate a Client
+- **Description:** Performers leave a review and rating for a client based on their experience.
+- **Prerequisites:** The performer has completed a booking with the client, and the event occurred.
+
+### System Admin
+#### 26. Blacklist a Client
+- **Description:** The system admin places a client on the blacklist for repeated violations of rules.
+
+#### 27. Register a Club
+- **Description:** Clubs register with the system and create an account.
+
+#### 28. Assign Performer to a Club
+- **Description:** A performer is added as an employee of a club.
+- **Prerequisites:** The performer requests collaboration with the club, and the club confirms.
+
+### List
+- Register a New User
+- Login
+- Report a Review
+- Respond to a Review
+- Edit Event Details
+- Book a Performer for an Event
+- Update Performer's Availability
+- Manage Club or Employee Profiles
+- Remove Performer Profile
+- Create Performer Profile
+- Create Event Invitation
+- Cancel Event
+- Add Funds to My Account
+- Pay for Premium Membership
+- Add Personal Information
+- Create a Reservation
+- View Performers
+- View Performer Profiles
+- View Performer Reviews
+- View Performer Availability
+- Confirm Booking
+- Reject Booking
+- Cancel Confirmed Booking
+- Report a Client
+- Rate a Client
+- Blacklist a Client
+- Register a Club
+- Assign Performer to a Club
+
 
 ### Notes from GlycerolVeinz
 - Represent interactions between actors (users or external systems) and the system
