@@ -202,34 +202,35 @@ The system must provide club administrators with access to a centralized managem
 - **Prerequisites:** The performer requests collaboration with the club, and the club confirms.
 
 ### List
-- Register a New User
-- Login
-- Report a Review
-- Respond to a Review
-- Edit Event Details
-- Book a Performer for an Event
-- Update Performer's Availability
-- Manage Club or Employee Profiles
-- Remove Performer Profile
-- Create Performer Profile
-- Create Event Invitation
-- Cancel Event
-- Add Funds to My Account
-- Pay for Premium Membership
-- Add Personal Information
-- Create a Reservation
-- View Performers
-- View Performer Profiles
-- View Performer Reviews
-- View Performer Availability
-- Confirm Booking
-- Reject Booking
-- Cancel Confirmed Booking
-- Report a Client
-- Rate a Client
-- Blacklist a Client
-- Register a Club
-- Assign Performer to a Club
+  
+  - [ ] Register a New User @FrysarovaKaterina
+  - [ ] Login @FrysarovaKaterina
+  - [ ] Report a Review @GlycerolVeinz
+  - [ ] Respond to a Review @GlycerolVeinz
+  - [ ] Edit Event Details @zlochina
+  - [ ] Book a Performer for an Event @FrysarovaKaterina
+  - [ ] Update Performer's Availability @anokhver 
+  - [ ] Manage Club or Employee Profiles @anokhver
+  - [ ] Remove Performer Profile @anokhver
+  - [ ] Create Performer Profile @anokhver
+  - [ ] Create Event Invitation @zlochina
+  - [ ] Cancel Event @zlochina
+  - [ ] Add Funds to My Account @panyuars
+  - [ ] Pay for Premium Membership @panyuars
+  - [ ] Add Personal Information @panyuars
+  - [ ] Create a Reservation @GlycerolVeinz
+  - [ ] View Performers @FrysarovaKaterina
+  - [ ] View Performer Profiles @FrysarovaKaterina
+  - [ ] View Performer Reviews @FrysarovaKaterina
+  - [ ] View Performer Availability @FrysarovaKaterina
+  - [ ] Confirm Booking @GlycerolVeinz 
+  - [ ] Reject Booking @GlycerolVeinz 
+  - [ ] Cancel Confirmed Booking @GlycerolVeinz 
+  - [ ] Report a Client @GlycerolVeinz 
+  - [ ] Rate a Client @GlycerolVeinz 
+  - [ ] Blacklist a Client @zlochina 
+  - [ ] Register a Club @panyuars 
+  - [ ] Assign Performer to a Club @anokhver 
 
 
 ### Notes from GlycerolVeinz
