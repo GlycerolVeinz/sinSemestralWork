@@ -344,34 +344,34 @@ The system must provide club administrators with access to a centralized managem
 
 ### List
   
-- [ ] Register a New User @FrysarovaKaterina
-- [ ] Login @FrysarovaKaterina
-- [ ] Report a Review @GlycerolVeinz
-- [ ] Respond to a Review @GlycerolVeinz
-- [ ] Edit Event Details @zlochina
-- [ ] Book a Performer for an Event @FrysarovaKaterina
-- [ ] Update Performer's Availability @anokhver
-- [ ] Manage Club or Employee Profiles @anokhver
-- [ ] Remove Performer Profile @anokhver
-- [ ] Create Performer Profile @anokhver
-- [ ] Create Event Invitation @zlochina
-- [ ] Cancel Event @zlochina
-- [ ] Add Funds to My Account @panyuars
-- [ ] Pay for Premium Membership @panyuars
-- [ ] Add Personal Information @panyuars
-- [ ] Create a Reservation @GlycerolVeinz
-- [ ] View Performers @FrysarovaKaterina
-- [ ] View Performer Profiles @FrysarovaKaterina
-- [ ] View Performer Reviews @FrysarovaKaterina
-- [ ] View Performer Availability @FrysarovaKaterina
-- [ ] Confirm Booking @GlycerolVeinz  
-- [ ] Reject Booking @GlycerolVeinz
-- [ ] Cancel Confirmed Booking @GlycerolVeinz
-- [ ] Report a Client @GlycerolVeinz
-- [ ] Rate a Client @GlycerolVeinz
-- [ ] Blacklist a Client @zlochina
-- [ ] Register a Club @panyuars
-- [ ] Assign Performer to a Club @anokhver
+- Register a New User @FrysarovaKaterina
+- Login @FrysarovaKaterina
+- Report a Review @GlycerolVeinz
+- Respond to a Review @GlycerolVeinz
+- Edit Event Details @zlochina
+- Book a Performer for an Event @FrysarovaKaterina
+- Update Performer's Availability @anokhver
+- Manage Club or Employee Profiles @anokhver
+- Remove Performer Profile @anokhver
+- Create Performer Profile @anokhver
+- Create Event Invitation @zlochina
+- Cancel Event @zlochina
+- Add Funds to My Account @panyuars
+- Pay for Premium Membership @panyuars
+- Add Personal Information @panyuars
+- Create a Reservation @GlycerolVeinz
+- View Performers @FrysarovaKaterina
+- View Performer Profiles @FrysarovaKaterina
+- View Performer Reviews @FrysarovaKaterina
+- View Performer Availability @FrysarovaKaterina
+- Confirm Booking @GlycerolVeinz  
+- Reject Booking @GlycerolVeinz
+- Cancel Confirmed Booking @GlycerolVeinz
+- Report a Client @GlycerolVeinz
+- Rate a Client @GlycerolVeinz
+- Blacklist a Client @zlochina
+- Register a Club @panyuars
+- Assign Performer to a Club @anokhver
 
 ### Notes from GlycerolVeinz on Use Cases
 
